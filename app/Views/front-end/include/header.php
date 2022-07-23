@@ -7,13 +7,13 @@
 		<meta name='robots' content='noindex, nofollow' />
 		<title>Home | Result</title>
 		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/assets/front-end/css/font-awesome.min.css">
 
 		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css'>
 		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css'>
 
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/responsive.css">	
+		<link rel="stylesheet" type="text/css" href="/assets/front-end/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/assets/front-end/css/responsive.css">	
 	</head>
 	<body>
 		<div class="site__border site__border--top" style="width: 27.1924%;"></div>
@@ -38,7 +38,7 @@
 				<div class="header-wrapper-sub">
 					<div class="header-wrapper">
 						<div class="clearfix">
-							<div class="logo float-left tran4s"><a href="index.html"><img src="images/logo/logo.png" alt="Logo"></a></div>
+							<div class="logo float-left tran4s"><a href="index.html"><img src="/assets/front-end/images/logo/logo.png" alt="Logo"></a></div>
 							<nav class="theme-main-menu float-right navbar" id="mega-menu-wrapper">
 							   <div class="navbar-header">
 								 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">

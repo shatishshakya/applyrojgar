@@ -16,8 +16,8 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * Router Setup
  * --------------------------------------------------------------------
  */
-$routes->setDefaultNamespace('App\Controllers\Admin');
-$routes->setDefaultController('Home');
+$routes->setDefaultNamespace('App\Controllers');
+//$routes->setDefaultController('FrontHome');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -31,7 +31,9 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+//$routes->get('/', 'Home::index');
+
+$routes->get('/', 'FrontEnd\FrontHome::index');
 #$routes->get('dashboard', 'Home::dashboard');
 
 /*
@@ -53,14 +55,15 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 
 
 
-$routes->get('admin', 'Home::index');
-$routes->post('sing-in', 'LoginController::signinAuth');
+$routes->get('admin', 'Admin\Home::index');
+$routes->post('sing-in', 'Admin\LoginController::signinAuth');
 
-$routes->group('admin','', static function ($routes) {
+$routes->group('admin',["namespace" => "App\Controllers\Admin"], static function ($routes) {
     $routes->get('dashboard', 'Home::dashboard');
 
 
-    $routes->get('gov-job-post', 'Home::gov_job_post');
+    $routes->get('gov-job', 'Home::gov_job');
+    $routes->post('gov-job-post', 'Home::storeGovermentJob');
 
     $routes->get('answer-key', 'Home::answer_key');
     $routes->post('store-answer-key', 'Home::storeAnswerKey');

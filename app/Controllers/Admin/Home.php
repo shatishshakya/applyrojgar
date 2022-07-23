@@ -54,7 +54,7 @@ class Home extends BaseController
 	
 
 	
-	public function gov_job_post()
+	public function gov_job()
     {
          return view('admin/job_post');
     }
@@ -522,6 +522,32 @@ class Home extends BaseController
 	public function vedio_link_report()
     {
          return view('admin/vedio_link_report');
+    }
+
+	public function storeGovermentJob() {
+        $dbModel = new GovermentJobModel();
+		date_default_timezone_set("Asia/Kolkata");
+        $currentdate = date('Y-m-d'); 
+		
+		$data = [
+			'IndexViewHeading' => $this->request->getVar('IndexViewHeading'),
+            'NamePost' => $this->request->getVar('NamePost'),
+			'PostDate' => $this->request->getVar('PostDate'),
+			'ShortInformation' => $this->request->getVar('PubliShortInformationcationDate'),
+			'Department' => $this->request->getVar('Department'),
+			'DepartmentAdvtDetails' => $this->request->getVar('DepartmentAdvtDetails'),
+			'ApplicationBegin' => $this->request->getVar('ApplicationBegin'),
+			'LastDateApplication' => $this->request->getVar('LastDateApplication'),
+			'ExamDate' => $this->request->getVar('ExamDate'),
+			'AdmitCardAvailableDate' => $this->request->getVar('AdmitCardAvailableDate'),
+			'AdmitCardLink' => $this->request->getVar('AdmitCardLink'),
+			'AnswerKeyLink' => $this->request->getVar('AnswerKeyLink'),
+			'OfficialWebsite' => $this->request->getVar('OfficialWebsite'),
+			'UpdateDate'  => $currentdate,
+        ];
+        $dbModel->insert($data);
+		
+		return $this->response->redirect('/admin/answer-key');
     }
 
 }

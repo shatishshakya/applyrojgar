@@ -19,7 +19,7 @@
     </div>
 </footer>
 
-<script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
+<script type="text/javascript" src="/assets/front-end/vendor/jquery.2.2.3.min.js"></script>
 
 <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
 
@@ -28,18 +28,18 @@
 
 
 
-<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
-<script type='text/javascript' src='vendor/Camera-master/scripts/jquery.mobile.customized.min.js'></script>
-<script type='text/javascript' src='vendor/Camera-master/scripts/jquery.easing.1.3.js'></script> 
-<script type='text/javascript' src='vendor/Camera-master/scripts/camera.min.js'></script>
-<script type="text/javascript" src="vendor/bootstrap-mega-menu/js/menu.js"></script>
-<script type="text/javascript" src="vendor/WOW-master/dist/wow.min.js"></script>
-<script type="text/javascript" src="vendor/owl-carousel/owl.carousel.min.js"></script>
-<script type="text/javascript" src="vendor/jquery.appear.js"></script>
-<script type="text/javascript" src="vendor/jquery.countTo.js"></script>
-<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="js/owl-cust-slider.js"></script>
-<script type="text/javascript" src="js/theme.js"></script>
+<script type="text/javascript" src="/assets/front-end/vendor/bootstrap/bootstrap.min.js"></script>
+<script type='text/javascript' src='/assets/front-end/vendor/Camera-master/scripts/jquery.mobile.customized.min.js'></script>
+<script type='text/javascript' src='/assets/front-end/vendor/Camera-master/scripts/jquery.easing.1.3.js'></script> 
+<script type='text/javascript' src='/assets/front-end/vendor/Camera-master/scripts/camera.min.js'></script>
+<script type="text/javascript" src="/assets/front-end/vendor/bootstrap-mega-menu/js/menu.js"></script>
+<script type="text/javascript" src="/assets/front-end/vendor/WOW-master/dist/wow.min.js"></script>
+<script type="text/javascript" src="/assets/front-end/vendor/owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="/assets/front-end/vendor/jquery.appear.js"></script>
+<script type="text/javascript" src="/assets/front-end/vendor/jquery.countTo.js"></script>
+<script type="text/javascript" src="/assets/front-end/vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/assets/front-end/js/owl-cust-slider.js"></script>
+<script type="text/javascript" src="/assets/front-end/js/theme.js"></script>
 <script>
 function progressBarScroll() {
   let winScroll = document.body.scrollTop || document.documentElement.scrollTop,

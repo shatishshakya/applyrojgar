@@ -73,7 +73,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                        <a class="collapse-item" href="#">Results</a>
                         <a class="collapse-item" href="<?=base_url()?>/admin/admit-card">Admit Card</a>
-						<a class="collapse-item" href="<?=base_url()?>/admin/gov-job-post">Goverment Job--NO_DB</a>
+						<a class="collapse-item" href="<?=base_url()?>/admin/gov-job">Goverment Job--NO_DB</a>
 						<a class="collapse-item" href="<?=base_url()?>/admin/answer-key">Answer Key</a>
 						<a class="collapse-item" href="<?=base_url()?>/admin/syllabus">Syllabus</a>
 						<a class="collapse-item" href="<?=base_url()?>/admin/admission">Admission</a>

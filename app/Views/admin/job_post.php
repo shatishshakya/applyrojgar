@@ -8,7 +8,7 @@
               <div class="card-header">
                 <h3 class="card-title">Goverment Job  Details </h3>
               </div>
-              <form id="Govt_Job_Form" action="<?php echo base_url('/admin/store-gov-jobdetails') ?>" method="POST" enctype="multipart/form-data" >
+              <form id="Govt_Job_Form" action="<?php echo base_url('/admin/gov-job-post') ?>" method="POST" enctype="multipart/form-data" >
                 <div class="card-body">
 
                   <div class="form-group">
@@ -33,67 +33,92 @@
 				        
 				            <div class="form-group">
                     <label for="exampleInputPassword1">Department </label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" >
+                    <input type="text" name="Department" class="form-control" id="exampleInputPassword1" >
                     </div>
 				  
 				            <div class="form-group">
                     <label for="exampleInputPassword1">Department Advt Details </label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" >
+                    <input type="text" name="DepartmentAdvtDetails" class="form-control" id="exampleInputPassword1" >
                     </div>
 				  
-				          <div class="form-group">
+				         <!-- <div class="form-group">
                     <label for="exampleInputPassword1">Advt No. </label>
                     <input type="password" name="password" class="form-control" id="exampleInputPassword1" >
-                    </div>
+                    </div>-->
 				  
 				           <div class="form-group">
-                    <label for="exampleInputPassword1">Application Begin : </label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" >
+                    <label for="ApplicationBegin">Application Begin : </label>
+                    <input type="text" name="ApplicationBegin" class="form-control" id="exampleInputPassword1" >
                   </div>
 				  
 				            <div class="form-group">
-                    <label for="exampleInputPassword1">Last Date for Apply Online : </label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+                    <label for="LastDateApply">Last Date for Apply Online : </label>
+                    <input type="text" name="LastDateApply" class="form-control" id="LastDateApply">
                   </div>
 				  
 				           <div class="form-group">
-                    <label for="exampleInputPassword1">Last Date Fee Payment : </label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" >
+                    <label for="LastDateFee">Last Date Fee Payment : </label>
+                    <input type="text" name="LastDateFee" class="form-control" id="LastDateFee" >
                   </div>
 				  
 				          <div class="form-group">
-                    <label for="exampleInputPassword1">Exam Date : </label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" >
+                    <label for="ExamDate">Exam Date : </label>
+                    <input type="text" name="ExamDate" class="form-control" id="ExamDate" >
                   </div>
 				  
 				          <div class="form-group">
-                    <label for="exampleInputPassword1">Admit Card Available : </label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" >
+                    <label for="AdmitCardAvailable">Admit Card Available : </label>
+                    <input type="text" name="AdmitCardAvailable" class="form-control" id="AdmitCardAvailable" >
                   </div>
 				  
 				         <div class="form-group">
-                    <label for="exampleInputPassword1">General / OBC / EWS : </label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" >
+                    <label for="GeneralOBCEWS">General / OBC / EWS : </label>
+                    <input type="password" name="GeneralOBCEWS" class="form-control" id="GeneralOBCEWS" >
                   </div>
 				  
 				           <div class="form-group">
-                    <label for="exampleInputPassword1">SC / ST : </label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" >
+                    <label for="SCST">SC / ST : </label>
+                    <input type="text" name="SCST" class="form-control" id="SCST" >
                   </div>
 				  
 				           <div class="form-group">
-                    <label for="exampleInputPassword1">PH (Divyang) : </label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" >
+                    <label for="PHFemale">PH (Divyang)/Female : </label>
+                    <input type="text" name="PHFemale" class="form-control" id="PHFemale" >
                   </div>
 				  
-				           <div class="form-group">
-                    <label for="exampleInputPassword1">Pay the Exam Fee Through Debit Card / Credit Card / Net Banking / E Challan </label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" >
-                  </div>
+				           <!--<div class="form-group">
+                    <label for="PayInfo">Pay the Exam Fee Through Debit Card / Credit Card / Net Banking / E Challan </label>
+                    <input type="text" name="PayInfo" class="form-control" id="PayInfo" >
+                  </div>-->
 				        
 				          <div class="form-group">
-                    <label for="exampleInputPassword1">General / OBC / EWS : </label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" >
+                    <label for="PostNameDetails">Post Name Details : </label>
+                    <input type="text" name="PostNameDetails" class="form-control" id="PostNameDetails" >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="TotalPost">Total Post : </label>
+                    <input type="text" name="TotalPost" class="form-control" id="TotalPost" >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="Qualification">Qualification : </label>
+                    <input type="text" name="Qualification" class="form-control" id="Qualification" >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="ApplyLink">Apply Online Link : </label>
+                    <input type="text" name="ApplyLink" class="form-control" id="ApplyLink" >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="NotificationDownload">Download Notification: </label>
+                    <input type="password" name="NotificationDownload" class="form-control" id="NotificationDownload" >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="OfficialWebsite">Official Website: </label>
+                    <input type="text" name="OfficialWebsite" class="form-control" id="OfficialWebsite" >
                   </div>
 				  
                   

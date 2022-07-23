@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers\Admin;
+namespace App\Controllers\FrontEnd;
 use CodeIgniter\Controller;
 
 use App\Controllers\BaseController;
@@ -18,7 +18,7 @@ class FrontHome extends BaseController
     public function index()
     {
 		
-        return view('admin/index');
+        return view('front-end/index');
     }
 	
 	

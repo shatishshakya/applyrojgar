@@ -1,4 +1,4 @@
-<?php include("header.php") ?> 
+<?php include("include/header.php") ?> 
 			
 			
 			
@@ -120,27 +120,27 @@
 							<div class="portfolio-slider">
 								<div class="item">
 									<div class="image">
-										<img src="images/college_students.jpg" alt="">
+										<img src="/assets/front-end/images/college_students.jpg" alt="">
 									</div>
 								</div>
 								<div class="item">
 									<div class="image">
-										<img src="images/questions-college-kids.jpg" alt="">
+										<img src="/assets/front-end/images/questions-college-kids.jpg" alt="">
 									</div>
 								</div>
 								<div class="item">
 									<div class="image">
-										<img src="images/Abstract_Design_Background.jpg" alt="">
+										<img src="/assets/front-end/images/Abstract_Design_Background.jpg" alt="">
 									</div>
 								</div>
 								<div class="item">
 									<div class="image">
-										<img src="images/Abstract_Design_Background.jpg" alt="">
+										<img src="/assets/front-end/images/Abstract_Design_Background.jpg" alt="">
 									</div>
 								</div>
 								<div class="item">
 									<div class="image">
-										<img src="images/Abstract_Design_Background.jpg" alt="">
+										<img src="/assets/front-end/images/Abstract_Design_Background.jpg" alt="">
 									</div>
 								</div>
 							</div> 
@@ -450,5 +450,5 @@
 
 			</div>
 			
-            <?php include("footer.php") ?> 
+            <?php include("include/footer.php") ?> 
 	
