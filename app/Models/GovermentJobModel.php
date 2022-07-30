@@ -24,6 +24,7 @@ class GovermentJobModel extends Model
 		"ApplicationBegin",
 		"LastDateApply",
 		"LastDateFee",
+		"ExamDate",
 		"AdmitCardAvailable",
 		"GeneralOBCEWS",
 		"SCST",

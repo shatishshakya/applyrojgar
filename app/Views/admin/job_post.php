@@ -73,7 +73,7 @@
 				  
 				         <div class="form-group">
                     <label for="GeneralOBCEWS">General / OBC / EWS : </label>
-                    <input type="password" name="GeneralOBCEWS" class="form-control" id="GeneralOBCEWS" >
+                    <input type="text" name="GeneralOBCEWS" class="form-control" id="GeneralOBCEWS" >
                   </div>
 				  
 				           <div class="form-group">
@@ -113,7 +113,7 @@
 
                   <div class="form-group">
                     <label for="NotificationDownload">Download Notification: </label>
-                    <input type="password" name="NotificationDownload" class="form-control" id="NotificationDownload" >
+                    <input type="text" name="NotificationDownload" class="form-control" id="NotificationDownload" >
                   </div>
 
                   <div class="form-group">

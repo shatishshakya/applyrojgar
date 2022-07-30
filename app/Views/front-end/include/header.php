@@ -50,13 +50,14 @@
 							   </div>
 							   <div class="collapse navbar-collapse" id="navbar-collapse-1">
 									<ul class="nav">
-										<li><a href="index.html" class="tran3s">Home</a></li>	
-										<li><a href="#" class="tran3s">Latest Jobs</a></li>
-										<li><a href="#" class="tran3s">Results</a></li>
-										<li><a href="#" class="tran3s">Admit Card</a></li>
-										<li><a href="#" class="tran3s">Answer Key</a></li>
-										<li><a href="#" class="tran3s">Syllabus</a></li>
-										<li><a href="#" class="tran3s">Admission</a></li>
+										<li><a href="#" class="tran3s">Home</a></li>	
+										<li><a href="<?php echo base_url('/goverment-job') ?>" class="tran3s">Government Jobs</a></li>
+										<li><a href="<?php echo base_url('/results') ?>" class="tran3s">Results</a></li>
+										<li><a href="<?php echo base_url('/admitcard') ?>" class="tran3s">Admit Card</a></li>
+										<li><a href="<?php echo base_url('/offline-forms') ?>" class="tran3s">Offline Form</a></li>
+										<li><a href="<?php echo base_url('/private-job') ?>" class="tran3s">Private Job</a></li>
+										<!--<li><a href="#" class="tran3s">Vedio Link</a></li>
+										<li><a href="#" class="tran3s">Study Notes</a></li>-->
 										<li><a href="#" class="tran3s">Contact Us</a></li>							
 									</ul>
 							   </div>

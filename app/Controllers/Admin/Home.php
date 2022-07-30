@@ -13,6 +13,7 @@ use App\Models\AdmitCardModel;
 use App\Models\AnswerKeyModel;
 use App\Models\AdmissionModel;
 use App\Models\AdminUserModel;
+use App\Models\GovermentJobModel;
 use App\Controllers\BaseController;
 
 class Home extends BaseController
@@ -43,15 +44,6 @@ class Home extends BaseController
         
     }
 
-	
-
-    public function index1()
-    {
-		//die('Hello');
-        return view('admin/index');
-    }
-	
-	
 
 	
 	public function gov_job()
@@ -252,20 +244,20 @@ class Home extends BaseController
 			'IndexViewHeading' => $this->request->getVar('IndexViewHeading'),
             'NamePost' => $this->request->getVar('NamePost'),
 			'PostDate' => $this->request->getVar('PostDate'),
-			'ShortInformation' => $this->request->getVar('PubliShortInformationcationDate'),
+			'ShortInformation' => $this->request->getVar('ShortInformation'),
 			'Department' => $this->request->getVar('Department'),
 			'DepartmentAdvtDetails' => $this->request->getVar('DepartmentAdvtDetails'),
 			'ApplicationBegin' => $this->request->getVar('ApplicationBegin'),
 			'LastDateApplication' => $this->request->getVar('LastDateApplication'),
 			'ExamDate' => $this->request->getVar('ExamDate'),
-			'AdmitCardAvailableDate' => $this->request->getVar('AdmitCardAvailableDate'),
+			'AnswerKeyAvailableDate' => $this->request->getVar('AnswerKeyAvailableDate'),
 			'AdmitCardLink' => $this->request->getVar('AdmitCardLink'),
 			'AnswerKeyLink' => $this->request->getVar('AnswerKeyLink'),
 			'OfficialWebsite' => $this->request->getVar('OfficialWebsite'),
-			'UpdateDate'  => $currentdate,
+			'UpdateDate1'  => $currentdate,
         ];
         $dbModel->insert($data);
-		
+		//print_r($dbModel);die;
 		return $this->response->redirect('/admin/answer-key');
     }
 	
@@ -384,7 +376,7 @@ class Home extends BaseController
         ];
 		
         $dbModel->insert($data);
-		return $this->response->redirect('admin/Home/offline_job_form');
+		return $this->response->redirect('/admin/offline_job_form');
     }
 	
 	public function storeAdmitCard() {
@@ -537,16 +529,25 @@ class Home extends BaseController
 			'Department' => $this->request->getVar('Department'),
 			'DepartmentAdvtDetails' => $this->request->getVar('DepartmentAdvtDetails'),
 			'ApplicationBegin' => $this->request->getVar('ApplicationBegin'),
-			'LastDateApplication' => $this->request->getVar('LastDateApplication'),
+			'LastDateApply' => $this->request->getVar('LastDateApply'),
+			'LastDateFee' => $this->request->getVar('LastDateFee'),
 			'ExamDate' => $this->request->getVar('ExamDate'),
+			//'LastDateApplication' => $this->request->getVar('LastDateApplication'),
+			//'ExamDate' => $this->request->getVar('ExamDate'),
+			'GeneralOBCEWS' => $this->request->getVar('GeneralOBCEWS'),
+			'SCST' => $this->request->getVar('SCST'),
+			'PHFemale' => $this->request->getVar('PHFemale'),
 			'AdmitCardAvailableDate' => $this->request->getVar('AdmitCardAvailableDate'),
+			
 			'AdmitCardLink' => $this->request->getVar('AdmitCardLink'),
 			'AnswerKeyLink' => $this->request->getVar('AnswerKeyLink'),
 			'OfficialWebsite' => $this->request->getVar('OfficialWebsite'),
 			'UpdateDate'  => $currentdate,
         ];
-        $dbModel->insert($data);
 		
+        $dbModel->insert($data);
+		print_r($dbModel);
+		die;
 		return $this->response->redirect('/admin/answer-key');
     }
 

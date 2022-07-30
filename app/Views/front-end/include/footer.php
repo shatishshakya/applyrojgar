@@ -60,7 +60,90 @@ $(document).ready(function(){
 })
 </script>
 
-<script>
+
+
+		<script>
+			$(document).ready(function () {
+				$(window).on("resize", function (e) {
+					checkScreenSize();
+				});
+
+				checkScreenSize();
+				
+				function checkScreenSize(){
+					var newWindowWidth = $(window).width();
+					if (newWindowWidth < 768) {
+						$(".first-result-tab").click(function(){
+							$(".first-result-panel").toggle();							
+						});
+
+						$(".second-result-tab").click(function(){
+							$(".second-result-panel").toggle();
+						});
+
+						$(".third-result-tab").click(function(){
+							$(".third-result-panel").toggle();
+						});
+
+						$(".four-result-tab").click(function(){
+							$(".four-result-panel").toggle();
+						});
+
+						$(".five-result-tab").click(function(){
+							$(".five-result-panel").toggle();
+						});
+
+						$(".six-result-tab").click(function(){
+							$(".six-result-panel").toggle();
+						});
+
+						$(".seven-result-tab").click(function(){
+							$(".seven-result-panel").toggle();
+						});
+
+						$(".eight-result-tab").click(function(){
+							$(".eight-result-panel").toggle();
+						});
+					}
+					else
+					{
+						$(".first-result-tab").click(function(){
+							$(".first-result-panel").show();							
+						});
+
+						$(".second-result-tab").click(function(){
+							$(".second-result-panel").show();
+						});
+
+						$(".third-result-tab").click(function(){
+							$(".third-result-panel").show();
+						});
+
+						$(".four-result-tab").click(function(){
+							$(".four-result-panel").show();
+						});
+
+						$(".five-result-tab").click(function(){
+							$(".five-result-panel").show();
+						});
+
+						$(".six-result-tab").click(function(){
+							$(".six-result-panel").show();
+						});
+
+						$(".seven-result-tab").click(function(){
+							$(".seven-result-panel").show();
+						});
+
+						$(".eight-result-tab").click(function(){
+							$(".eight-result-panel").show();
+						});
+					}
+				}
+			});
+		</script>
+
+<!-- old<script>
 $(document).ready(function(){
     $(".first-result-tab").click(function(){
         $(".first-result-panel").toggle(500);
@@ -96,7 +179,7 @@ $(document).ready(function(){
     });
     
 });
-</script>
+</script>-->
 
 </body>
 </html>

@@ -60,10 +60,10 @@
                     <input type="text" name="ExamDate" class="form-control" id="ExamDate" >
                   </div>
 
-                  <div class="form-group">
+                 <!-- <div class="form-group">
                     <label for="UploadDate">Admit Card Available : : </label>
                     <input type="text" name="AdmitCardAvailableDate" class="form-control" id="AdmitCardAvailableDate" >
-                  </div>
+                  </div>-->
 
                   <div class="form-group">
                     <label for="UploadDate">Answer Key Available  : </label>

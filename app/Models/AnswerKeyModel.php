@@ -24,7 +24,7 @@ class AnswerKeyModel extends Model
 		"ApplicationBegin",
 		"LastDateApplication",
 		"ExamDate",
-		"AdmitCardAvailableDate",
+		"AnswerKeyAvailableDate",
 		"AdmitCardLink",
 		"AnswerKeyLink",
 		"OfficialWebsite",

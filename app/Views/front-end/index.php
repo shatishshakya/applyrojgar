@@ -1,44 +1,7 @@
 <?php include("include/header.php") ?> 
+	<?php include("employment_news.php") ?> 		
 			
-			
-			
-			<div class="sidebar-contact">
-				<div class="toggle active"> Latest News</div>
-				<h3 class="text-center">Results</h3><br>
-				<div class="sign-up-form">					
-					<div class="screen-reader-response">
-						<div class="tab-content">
-							<div id="monthly" class="tab-pane fade in active">
-								<div class="clearfix">
-									<div class="right-side">
-										<ul>
-											<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-											<li><a href="#" target="_blank">Indian Coast Guard Navik &amp; Yantrik 01/2022 Batch Exam Result 2021</a></li>
-											<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-											<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-											<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-											<li><a href="#" target="_blank">Indian Coast Guard Navik &amp; Yantrik 01/2022 Batch Exam Result 2021</a></li>
-											<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-											<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-											<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-											<li><a href="#" target="_blank">Indian Coast Guard Navik &amp; Yantrik 01/2022 Batch Exam Result 2021</a></li>
-											<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-											<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-											<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-											<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-											<li><a href="#" target="_blank">Indian Coast Guard Navik &amp; Yantrik 01/2022 Batch Exam Result 2021</a></li>
-											<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-											<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-										</ul>
-									</div> 
-								</div>
-							</div> 						  	
-						</div>
-					</div>
-				</div>
-			</div>
-	
-			<div class="main-page-wrapper">
+	<div class="main-page-wrapper">
 
 				<div class="home-service-section">
 					<div class="container">
@@ -48,62 +11,18 @@
 							</div>
 
 							<ul id="owl-carousel" class="rounded-circle owl-carousel owl-theme">
-								<li class="item">
-									<div id="box">
-										<div class="inner-box">
-											<h5><a href="#" class="tran3s">Navy SSR | AA 2021 </a></h5>
-											<p><a href="#" class="tran3s">Apply Online</a></p>
-										</div>
-									</div>
-								</li>
-								<li class="item">
-									<div id="box">
-										<div class="inner-box">
-											<h5><a href="#" class="tran3s">IBPS Clerk XI</a></h5>
-											<p><a href="#" class="tran3s">Apply Online</a></p>
-										</div>
-									</div>
-								</li>
-								<li class="item">
-									<div id="box">
-										<div class="inner-box">
-											<h5><a href="#" class="tran3s">IBPS Clerk XI</a></h5>
-											<p><a href="#" class="tran3s">Apply Online</a></p>
-										</div>
-									</div>
-								</li>
-								<li class="item">
-									<div id="box">
-										<div class="inner-box">
-											<h5><a href="#" class="tran3s">IBPS Clerk XI</a></h5>
-											<p><a href="#" class="tran3s">Apply Online</a></p>
-										</div>
-									</div>
-								</li>
-								<li class="item">
-									<div id="box">
-										<div class="inner-box">
-											<h5><a href="#" class="tran3s">IBPS Clerk XI</a></h5>
-											<p><a href="#" class="tran3s">Apply Online</a></p>
-										</div>
-									</div>
-								</li>
-								<li class="item">
-									<div id="box">
-										<div class="inner-box">
-											<h5><a href="#" class="tran3s">IBPS Clerk XI</a></h5>
-											<p><a href="#" class="tran3s">Apply Online</a></p>
-										</div>
-									</div>
-								</li>
-								<li class="item">
-									<div id="box">
-										<div class="inner-box">
-											<h5><a href="#" class="tran3s">IBPS Clerk XI</a></h5>
-											<p><a href="#" class="tran3s">Apply Online</a></p>
-										</div>
-									</div>
-								</li>
+								<?php if($admit_card) { ?>
+									<?php foreach($admit_card as $admit) {?>
+										<li class="item">
+											<div id="box">
+												<div class="inner-box">
+													<h5><a href="#" class="tran3s"><?php echo $admit ['IndexViewHeading'] ?? '' ?> </a></h5>
+													<p><a href="#" class="tran3s">Apply Online</a></p>
+												</div>
+											</div>
+										</li>
+									<?php } ?>
+								<?php } ?>
 							</ul>
 						</div>
 					</div>
@@ -172,7 +91,7 @@
 													<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
 												</ul>
 												<div class="job-btn">
-													<a href="uppsc-pre-list.php" target="_blank" class="more">View More Jobs</a><br>
+													<a href="<?php echo base_url('/results') ?>" target="_blank" class="more">View More </a><br>
 												</div>
 											</div> 
 										</div>
@@ -186,21 +105,17 @@
 											<div class="top-side-pro second-result-tab"><h4><strong>Admit Card</strong> <i class="fa fa-users"></i></h4></div>
 											<div class="right-side second-result-panel">
 												<ul>
-													<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-													<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-													<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-													<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
+													<!----------------Admit Card start----------------------------------->
+													<?php if($admit_card) { ?>
+														<?php foreach($admit_card as $admit) {?>
+															<li><a href="#" target="_blank"><?php echo $admit['IndexViewHeading'] ?? '' ?></a></li>
+														<?php } ?>
+													<?php } ?>
+
+													<!-----------------------Admit Card end---------------------------->
 												</ul>
 												<div class="job-btn">
-													<a href="uppsc-pre-list.php" target="_blank" class="more">View More Jobs</a><br>
+												<a href="<?php echo base_url('/admitcard') ?>" target="_blank" class="more">View More </a><br>
 												</div>
 											</div> 
 										</div>
@@ -214,7 +129,17 @@
 											<div class="top-side-pro third-result-tab"><h4><strong> Goverment Jobs</strong> <i class="fa fa-users"></i></h4></div>
 											<div class="right-side third-result-panel">
 												<ul>
-													<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
+                                                    <!----------------Goverment JOb start----------------------------------->
+													<?php if($goverment_job) { ?>
+														<?php foreach($goverment_job as $goverment) {?>
+															<li><a href="#" target="_blank"><?php echo $goverment['IndexViewHeading'] ?? '' ?></a></li>
+														<?php } ?>
+													<?php } ?>
+
+													<!-----------------------Goverment job end---------------------------->
+
+												
+													<!--<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
 													<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
 													<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
 													<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
@@ -225,10 +150,10 @@
 													<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
 													<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
 													<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
+													<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>-->
 												</ul>
 												<div class="job-btn">
-													<a href="uppsc-pre-list.php" target="_blank" class="more">View More Jobs</a><br>
+													<a href="<?php echo base_url('/goverment-job') ?>" target="_blank" class="more">View More </a><br>
 												</div>
 											</div> 
 										</div>
@@ -251,15 +176,17 @@
 													<div class="top-side-pro four-result-tab"><h4><strong>Answer Key</strong> <i class="fa fa-users"></i></h4></div>
 													<div class="right-side four-result-panel">
 														<ul>
-															<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-															<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
-															<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-															<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-															<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-															<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
+															<!---------------- Answr kEy start----------------------------------->
+													<?php if($answer_key) { ?>
+														<?php foreach($answer_key as $answer_keylist) {?>
+															<li><a href="#" target="_blank"><?php echo $answer_keylist['IndexViewHeading'] ?? '' ?></a></li>
+														<?php } ?>
+													<?php } ?>
+
+													<!-----------------------Answer Key  end---------------------------->
 														</ul>
 														<div class="job-btn">
-															<a href="uppsc-pre-list.php" target="_blank" class="more">View More Jobs</a><br>
+														<a href="<?php echo base_url('/answey-key') ?>" target="_blank" class="more">View More </a><br>
 														</div>
 													</div> 
 												</div>
@@ -273,15 +200,17 @@
 													<div class="top-side-pro five-result-tab"><h4><strong>Syllabus</strong> <i class="fa fa-users"></i></h4></div>
 													<div class="right-side five-result-panel">
 														<ul>
-															<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-															<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
-															<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-															<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-															<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-															<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
+															<!----------------syllabusstart----------------------------------->
+													<?php if($syllabus) { ?>
+														<?php foreach($syllabus as $syllabus_index) {?>
+															<li><a href="#" target="_blank"><?php echo $syllabus_index['IndexViewHeading'] ?? '' ?></a></li>
+														<?php } ?>
+													<?php } ?>
+
+													<!-----------------------syllabus end---------------------------->
 														</ul>
 														<div class="job-btn">
-															<a href="uppsc-pre-list.php" target="_blank" class="more">View More Jobs</a><br>
+														<a href="<?php echo base_url('/syllabus') ?>" target="_blank" class="more">View More </a><br>
 														</div>
 													</div> 
 												</div>
@@ -298,15 +227,17 @@
 													<div class="top-side-pro six-result-tab"><h4><strong>Private Job</strong> <i class="fa fa-users"></i></h4></div>
 													<div class="right-side six-result-panel">
 														<ul>
-															<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-															<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
-															<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-															<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-															<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-															<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
+															<!----------------private_job start----------------------------------->
+													<?php if($private_job) { ?>
+														<?php foreach($private_job as $private_joblist) {?>
+															<li><a href="#" target="_blank"><?php echo $private_joblist['IndexViewHeading'] ?? '' ?></a></li>
+														<?php } ?>
+													<?php } ?>
+
+													<!-----------------------private_job  end---------------------------->
 														</ul>
 														<div class="job-btn">
-															<a href="uppsc-pre-list.php" target="_blank" class="more">View More Jobs</a><br>
+															<a href="<?php echo base_url('/private-job') ?>" target="_blank" class="more">View More </a><br>
 														</div>
 													</div> 
 												</div>
@@ -320,15 +251,17 @@
 													<div class="top-side-pro seven-result-tab"><h4><strong>Admission </strong> <i class="fa fa-users"></i></h4></div>
 													<div class="right-side seven-result-panel">
 														<ul>
-															<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-															<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
-															<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-															<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-															<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-															<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
+															<!----------------Admission start----------------------------------->
+													<?php if($admission) { ?>
+														<?php foreach($admission as $admissionlist) {?>
+															<li><a href="#" target="_blank"><?php echo $admissionlist['IndexViewHeading'] ?? '' ?></a></li>
+														<?php } ?>
+													<?php } ?>
+
+													<!-----------------------Admission  end---------------------------->
 														</ul>
 														<div class="job-btn">
-															<a href="uppsc-pre-list.php" target="_blank" class="more">View More Jobs</a><br>
+															<a href="<?php echo base_url('/admission') ?>" target="_blank" class="more">View More </a><br>	
 														</div>
 													</div> 
 												</div>
@@ -341,24 +274,20 @@
 								<div class="tab-content">
 									<div id="monthly" class="tab-pane fade in active">
 										<div class="clearfix">
-											<div class="top-side-pro eight-result-tab"><h4><strong>Notes</strong> <i class="fa fa-users"></i></h4></div>
+											<div class="top-side-pro eight-result-tab"><h4><strong>Study Notes</strong> <i class="fa fa-users"></i></h4></div>
 											<div class="right-side eight-result-panel">
 												<ul>
-													<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-													<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-													<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-													<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-													<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
+													<!----------------study_notes start----------------------------------->
+													<?php if($study_notes) { ?>
+														<?php foreach($study_notes as $study_noteslist) {?>
+															<li><a href="#" target="_blank"><?php echo $study_noteslist['IndexViewHeading'] ?? '' ?></a></li>
+														<?php } ?>
+													<?php } ?>
+
+													<!-----------------------study_notes  end---------------------------->
 												</ul>
 												<div class="job-btn">
-													<a href="uppsc-pre-list.php" target="_blank" class="more">View More Jobs</a><br>
+													<a href="<?php echo base_url('/study-notes') ?>" target="_blank" class="more">View More </a><br>
 												</div>
 											</div> 
 										</div>
@@ -379,17 +308,17 @@
 										<div class="top-side-pro first-result-tab"><h4><strong> Important Link </strong> <i class="fa fa-users"></i></h4></div>
 										<div class="right-side first-result-panel">	
 											<ul>
-												<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-												<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
-												<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-												<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-												<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-												<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
-												
-											
+												<!----------------Important Link start----------------------------------->
+												<?php if($important_link) { ?>
+														<?php foreach($important_link as $important_linklist) {?>
+															<li><a href="#" target="_blank"><?php echo $important_linklist['IndexViewHeading'] ?? '' ?></a></li>
+														<?php } ?>
+													<?php } ?>
+
+													<!-----------------------Important Link  end---------------------------->
 											</ul>
 											<div class="job-btn">
-												<a href="uppsc-pre-list.php" target="_blank" class="more">View More Jobs</a><br>
+												<a href="<?php echo base_url('/important-link') ?>" target="_blank" class="more">View More </a><br>
 											</div>
 										</div> 
 									</div>
@@ -403,16 +332,17 @@
 										<div class="top-side-pro second-result-tab"><h4><strong>Offline Form</strong> <i class="fa fa-users"></i></h4></div>
 										<div class="right-side second-result-panel">
 											<ul>
-												<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-												<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
-												<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-												<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-												<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-												<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
-											
+												<!----------------Offline Form start----------------------------------->
+												<?php if($offline_job) { ?>
+														<?php foreach($offline_job as $offline_joblist) {?>
+															<li><a href="#" target="_blank"><?php echo $offline_joblist['IndexViewHeading'] ?? '' ?></a></li>
+														<?php } ?>
+													<?php } ?>
+
+													<!-----------------------Offline Form  end---------------------------->
 											</ul>
 											<div class="job-btn">
-												<a href="uppsc-pre-list.php" target="_blank" class="more">View More Jobs</a><br>
+												<a href="<?php echo base_url('/offline-forms') ?>" target="_blank" class="more">View More </a><br>
 											</div>
 										</div> 
 									</div>
@@ -426,17 +356,19 @@
 										<div class="top-side-pro third-result-tab"><h4><strong>Video Link</strong> <i class="fa fa-users"></i></h4></div>
 										<div class="right-side third-result-panel">
 											<ul>
-												<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-												<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
-												<li><a href="#" target="_blank">IB Intelligence Bureau ACIO Gr-II Tier-II Exam Result 2021</a></li>
-												<li><a href="#" target="_blank">Bihar Police Steno ASI Final Exam Result 2021</a></li>
-												<li><a href="#" target="_blank">Bihar Police Steno ASI Exam Final Result &amp; Selection Letter 2021</a></li>
-												<li><a href="#" target="_blank">Indian Coast Guard Navik & Yantrik 01/2022 Batch Exam Result 2021</a></li>
+													<!----------------Offline Form start----------------------------------->
+													<?php if($vedio_link) { ?>
+														<?php foreach($vedio_link as $vedio_linklist) {?>
+															<li><a href="#" target="_blank"><?php echo $vedio_linklist['IndexViewHeading'] ?? '' ?></a></li>
+														<?php } ?>
+													<?php } ?>
+
+													<!-----------------------Offline Form  end---------------------------->
 											
 												
 											</ul>
 											<div class="job-btn">
-												<a href="uppsc-pre-list.php" target="_blank" class="more">View More Jobs</a><br>
+												<a href="<?php echo base_url('/vedio-link') ?>" target="_blank" class="more">View More </a><br>
 											</div>
 										</div> 
 									</div>
